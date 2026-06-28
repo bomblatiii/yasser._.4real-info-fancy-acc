@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yasser._.4 real | gamer and website creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&family=Satoshi:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <p>loading your sanctuary...</p>
+    </div>
+
+    <canvas id="particle-canvas"></canvas>
+    <audio id="backgroundAudio" autoplay loop preload="auto" playsinline crossorigin="anonymous">
+        <source src="assets/murujan-nasheed.mp3.mp3" type="audio/mpeg" />
+    </audio>
+    <video id="backgroundVideo" autoplay loop muted playsinline preload="auto" crossorigin="anonymous"
+        class="background-video">
+        <source src="assets/stormlight-over-fields.3840x2160.mp4" type="video/mp4" />
+    </video>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-core" id="cursorCore"></div>
+
+    <div class="scene" id="scene">
+        <a class="brand-logo" href="https://www.instagram.com/yasser._.4real/?hl=en" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram">
+            <img src="assets/Instagram-Logo.png" alt="Instagram" class="brand-icon" />
+        </a>
+
+        <section class="hero-grid">
+            <div class="hero-panel">
+                <div class="profile-card glass-card fade-in-up">
+                    <div class="avatar-shell">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-ring"></div>
+                        <div class="avatar">
+                            <img src="assets/732584102_1667774967851138_515321254505763031_n.jpg"
+                                alt="Yasser profile picture" />
+                        </div>
+                        <div class="status-badge">Live</div>
+                    </div>
+
+                    <div class="profile-info">
+                        <h1 class="glitch-heading" data-text="yasser._.4 real">yasser._.4 real</h1>
+                        <p class="subtle-text">he/him • 📍 algeria,casbah </p>
+                        <div class="meta-row">
+                            <span class="tag">ONLINE</span>
+                            <span class="dot"></span>
+                            <span>gamers + websites creator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card discord-card fade-in-up delay-1">
+                    <div class="card-top">
+                        <div class="discord-avatar">
+                            <img src="assets/732584102_1667774967851138_515321254505763031_n.jpg"
+                                alt="Yasser Discord avatar" />
+                        </div>
+                        <div>
+                            <p class="discord-name">yasser._.4real</p>
+                            <p class="discord-status">Last seen 5m ago</p>
+                        </div>
+                        <span class="verified" title="Verified">✓</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="status-pill">
+                            <span class="status-dot online"></span>
+                            <span>Active on Discord</span>
+                        </div>
+                        <p class="card-note">A subtle glass card with soft neon glow, designed for gaming profile
+                            intros.</p>
+                    </div>
+                </div>
+
+                <div class="feature-row fade-in-up delay-2">
+                    <div class="feature-card glass-card">
+                        <p class="feature-title">NOW PLAYING</p>
+                        <div class="player-line">
+                            <span>murujan nasheed</span>
+                            <span class="small-tag">NOW PLAYING</span>
+                        </div>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <p class="feature-title">Visitors</p>
+                        <p class="feature-value" id="visitorCount">163</p>
+                    </div>
+                </div>
+
+                <div class="social-row fade-in-up delay-3">
+                    <a class="social-link" href="https://discord.com/channels/@me/1518254642616733988" target="_blank"
+                        rel="noopener noreferrer" aria-label="Discord">
+                        <img src="assets/discord-logo-discord-icon-transparent-free-png.webp" alt="Discord" />
+                    </a>
+                    <a class="social-link" href="https://open.spotify.com/user/31yikusoz6vc4clcotu42y26bvfa"
+                        target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                        <img src="assets/Spotify_logo_without_text.svg.png" alt="Spotify" />
+                    </a>
+                    <a class="social-link" href="https://steamcommunity.com/profiles/76561198688992799/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Steam">
+                        <img src="assets/Steam_icon_logo.svg.png" alt="Steam" />
+                    </a>
+                    <a class="social-link" href="https://www.instagram.com/yasser._.4real/?hl=en" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="assets/Instagram-Logo.png" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <a href="https://www.instagram.com/yasser._.4real/?hl=en" target="_blank" rel="noopener noreferrer"
+            aria-label="Yasser profile">
+            <img src="assets/Instagram-Logo.png" alt="Yasser footer logo" />
+        </a>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.classList.add('loaded');
+                setTimeout(() => loader.style.display = 'none', 600);
+            }
+        });
+    </script>
+    <script src="scripte.js"></script>
+</body>
+
+</html>
